@@ -1,0 +1,25 @@
+{
+  "collectionName": "components_mcq_mcqs",
+  "info": {
+    "name": "MCQCode",
+    "icon": "book-open",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "AnswerImg": {
+      "model": "file",
+      "via": "related",
+      "allowedTypes": [
+        "images"
+      ],
+      "plugin": "upload",
+      "required": true,
+      "pluginOptions": {}
+    },
+    "isCorrectAnswer": {
+      "type": "boolean",
+      "default": false
+    }
+  }
+}

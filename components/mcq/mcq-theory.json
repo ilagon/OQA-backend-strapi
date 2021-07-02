@@ -1,0 +1,19 @@
+{
+  "collectionName": "components_mcq_mcq_theories",
+  "info": {
+    "name": "MCQTheory",
+    "icon": "atlas",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "Answer": {
+      "type": "text",
+      "required": true
+    },
+    "isCorrectAnswer": {
+      "type": "boolean",
+      "default": false
+    }
+  }
+}

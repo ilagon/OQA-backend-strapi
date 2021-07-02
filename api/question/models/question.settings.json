@@ -1,0 +1,50 @@
+{
+  "kind": "collectionType",
+  "collectionName": "questions",
+  "info": {
+    "name": "Question",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "QuestionImg": {
+      "model": "file",
+      "via": "related",
+      "allowedTypes": [
+        "images"
+      ],
+      "plugin": "upload",
+      "required": true,
+      "pluginOptions": {}
+    },
+    "isCorrect": {
+      "type": "boolean"
+    },
+    "CorrectAnswerAndExplanation": {
+      "type": "richtext",
+      "required": true
+    },
+    "Answers": {
+      "type": "dynamiczone",
+      "components": [
+        "mcq.mcq",
+        "mcq.mcq-theory"
+      ],
+      "required": true
+    },
+    "GivenAnswer": {
+      "type": "string"
+    },
+    "Title": {
+      "type": "string",
+      "required": true,
+      "unique": true,
+      "private": true
+    }
+  }
+}

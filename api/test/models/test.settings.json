@@ -1,0 +1,35 @@
+{
+  "kind": "collectionType",
+  "collectionName": "tests",
+  "info": {
+    "name": "Test",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "Title": {
+      "type": "string",
+      "required": true
+    },
+    "Score": {
+      "type": "integer"
+    },
+    "questions": {
+      "collection": "question"
+    },
+    "users_permissions_user": {
+      "plugin": "users-permissions",
+      "model": "user",
+      "via": "tests"
+    },
+    "TestSummary": {
+      "type": "richtext",
+      "required": true
+    }
+  }
+}
